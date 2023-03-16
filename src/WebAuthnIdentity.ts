@@ -43,7 +43,19 @@ export default class WebAuthnIdentity {
     return new WebAuthnIdentity(identity);
   }
 
+  /**
+   * Returns the Semaphore identity object.
+   * @returns The Semaphore identity.
+   */
   public get identity(): Identity {
+    return this._identity;
+  }
+
+  /**
+   * Returns the Semaphore identity object.
+   * @returns The Semaphore identity.
+   */
+  public getIdentity(): Identity {
     return this._identity;
   }
 }
