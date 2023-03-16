@@ -1,6 +1,6 @@
 {
   "name": "semaphore-webauthn",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
     "@simplewebauthn/typescript-types": "^7.0.0",
@@ -16,6 +16,6 @@
   "scripts": {
     "build": "tsc"
   },
-  "types": "dist/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "main": "dist/index.js"
 }
