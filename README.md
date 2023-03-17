@@ -14,7 +14,7 @@ const options = {
 };
 
 // STEP 2: Register a new WebAuthn credential and get its Semaphore identity
-const newWebAuthnIdentity = WebAuthnIdentity.fromRegister(options);
+const newWebAuthnIdentity = await WebAuthnIdentity.fromRegister(options);
 
 // Now we can save this commitment in our DB (pseudocode)
 const { commitment } = newWebAuthnIdentity.getIdentity();
@@ -24,7 +24,7 @@ fetch("/api/register" /* Replace this with your endpoint */, {
 });
 
 // STEP 3: Authenticate existing WebAuthn credential and signal
-const existingWebAuthnIdentity = WebAuthnIdentity.fromRegister(options);
+const existingWebAuthnIdentity = await WebAuthnIdentity.fromRegister(options);
 // Get existing group and anonymously signal (pseudocode)
 import { Group } from "@semaphore-protocol/group";
 import { generateProof } from "@semaphore-protocol/proof";
