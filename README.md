@@ -1,5 +1,7 @@
 # semaphore-webauthn
 
+**NOTE: This repository has been archived. The most up-to-date code is at [semaphore-protocol/semaphore](https://github.com/semaphore-protocol/semaphore/tree/main/packages/heyauthn) and the npm package is published at [@semaphore-protocol/heyauthn](https://www.npmjs.com/package/@semaphore-protocol/heyauthn).**
+
 ## Example usage:
 
 ```typescript
